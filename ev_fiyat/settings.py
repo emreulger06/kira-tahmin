@@ -3,8 +3,10 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'dummy-key-for-demo'
+
 DEBUG = True
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -54,12 +56,22 @@ DATABASES = {
 }
 
 LANGUAGE_CODE = 'tr-tr'
+
 TIME_ZONE = 'Europe/Istanbul'
+
 USE_I18N = True
+
 USE_TZ = True
 
+# ✅ Statikler için önerilen ayar
 STATIC_URL = '/static/'
 
+# Bu klasöre toplar (deployment)
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Bu klasörden toplar (development)
 STATICFILES_DIRS = [
-    BASE_DIR / "static"
+    BASE_DIR / "static",
 ]
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
