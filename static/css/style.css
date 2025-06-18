@@ -1,0 +1,117 @@
+/* === Genel Ayarlar === */
+body {
+    background-color: #e9f4fb; /* Soft açık mavi */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* === Başlık === */
+h2 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #333;
+}
+
+/* === Tahmin Sonucu === */
+.tahmin-sonuc {
+    background: #d4edda;
+    border: 3px solid #28a745;
+    border-radius: 12px;
+    color: #155724;
+    font-weight: 900;
+    font-size: 32px; 
+    text-align: center;
+    padding: 25px 40px;
+    display: inline-block;
+    margin: 30px auto;
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3);
+    transition: transform 0.2s ease;
+}
+
+
+.tahmin-sonuc:hover {
+    transform: scale(1.03);
+}
+
+
+/* === Model Açıklama ve Grafik === */
+.model-aciklama {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* === Form Alanı === */
+form {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 14px 25px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* === Hata Mesajı === */
+.hata {
+    color: #e74c3c;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 24px;
+    }
+    .tahmin-sonuc {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
