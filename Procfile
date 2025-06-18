@@ -1,0 +1,1 @@
+web: gunicorn ev_fiyat.wsgi
